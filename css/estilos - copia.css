@@ -1,0 +1,525 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+/*CONTENIDO PRINCIPAL*/
+
+
+.contenedortotalpri{
+    background-image: url(../imagenes/fondopri\ 6.avif);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-position: center;
+        background-size: cover;
+    }
+.menupri{
+    background-color:rgb(228, 216, 154);
+    
+}
+.menupri ul{
+    margin-right: 3%;
+}
+/*
+    .menupri  ul li {
+        list-style-type: none;
+        margin-left: 20px;
+    }
+    */
+    .logomenupri img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .menupri a{
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+    }
+    .titulopri{
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+        text-align: center;
+    }
+
+.imgpri{
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 60px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+.imgpri img{
+    height: 400px;
+    width: 800px;
+    border-radius: 5%;
+}
+
+
+.textopri{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    border: solid 6px black;
+    text-align: justify;
+    margin: 5px 20px 10px 20px;
+    margin-bottom: 40px;
+    border-radius: 2%;
+}
+
+.iframepri iframe{
+    border-radius: 5%;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footerpri{
+    background-color: rgb(228, 216, 154);
+}
+.footerpri a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+} 
+
+
+/*FIN DE CONTENIDO PRINCIPAL*/
+/*novedades*/
+.contenedortotalnov{
+    background-image: url(../imagenes/fondopri\ 6.avif)
+    
+}
+.contenedornov{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5fr 0,5fr 1fr 1fr;
+    grid-template-areas:
+    "menunov menunov"
+    "titulonov titulonov"
+    "prinov textonov"
+    "footernov footernov" ;
+}
+.menunov{
+    grid-area: menunov;
+}
+.titulonov{
+    grid-area: titulonov;
+}
+.prinov{
+    grid-area: prinov;
+}
+.textonov{
+    grid-area: textonov;
+}
+.footernov{
+    grid-area: footernov;
+}
+
+.textonov {
+    margin: 10% 20% 10% 10%;
+    text-align: center;
+}
+.textonov p{
+    font-size: 22px;
+    padding-top: 4%;
+}
+.textonov h2 h3{
+    font-weight: bold;
+    font-size: 50px;
+}
+.menunov{
+    background-color:rgb(228, 216, 154);
+}
+/*
+.menunov ul li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+*/
+
+.logomenunov img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.menunov a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.titulonov{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+}
+.prinov{
+    margin: 70px 20px 200px 70px;
+}
+.prinov img{
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+}
+.footernov{
+    background-color: rgb(228, 216, 154);
+}
+.footernov a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+/* CONTENIDO TABLET NOV*/
+@media screen and (max-width: 768px){
+    .contenedornov{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (5,1fr);
+        grid-template-areas:
+        "menunov"
+        "titulonov"
+        "prinov"
+        "textonov"
+        "footernov";
+    }
+.menunov{
+    grid-area: menunov;
+}
+.titulonov{
+    grid-area: titulonov;
+}
+.prinov{
+    grid-area: prinov;
+}
+.textonov{
+    grid-area: textonov;
+}
+.footernov{
+    grid-area: footernov;
+}
+
+}
+
+/*contenido celular*/
+
+@media screen and (max-width: 500px){
+    .contenedornov{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (5,1fr);
+        grid-template-areas:
+        "menunov"
+        "titulonov"
+        "prinov"
+        "textonov"
+        "footernov";
+    }
+.menunov{
+    grid-area: menunov;
+}
+.titulonov{
+    grid-area: titulonov;
+}
+.prinov{
+    grid-area: prinov;
+}
+.textonov{
+    grid-area: textonov;
+}
+.footernov{
+    grid-area: footernov;
+}
+    
+}
+
+
+/*fin de novedades*/
+
+
+
+/*productos*/
+.contenedortotalpro{
+    background-image: url(../imagenes/fondopri\ 6.avif);
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contenedorpro{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5% 0,5% 1fr 0,5%;
+    grid-template-areas:
+    "menupro menupro"
+    "titulopro titulopro"
+    "secpro secpro"
+    "footerpro footerpro" ;
+}
+.menupro{
+    grid-area: menupro;
+}
+.titulopro{
+    grid-area: titulopro;
+}
+.secpro{
+    grid-area: secpro;
+}
+
+.footerpro{
+    grid-area: footerpro;
+}
+
+.menupro{
+    background-color:rgb(228, 216, 154);
+}
+.menupro ul{
+float: right;
+margin-right: 3%;
+}
+
+
+.menupro  ul li {
+    list-style-type: none;
+    margin-left: 20px;
+
+}
+.logomenupro img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.menupro a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.titulopro{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+
+}
+.secpro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.secpro .gallery1 img{
+    object-fit: cover;
+    width: 238px;
+    height: 98%;
+    border-radius: 20px;
+}
+.secpro .gallery1{
+
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    grid-template-areas:
+    "img5 img9 img2"
+    "img4 img8 img6"
+    "img4 img3 img6";
+
+}
+
+.secpro .gallery1 .img-a{
+grid-area: img5;
+}
+.secpro .gallery1 .img-b{
+grid-area: img2;
+}
+.secpro .gallery1 .img-c{
+grid-area: img3;
+}
+.secpro .gallery1 .img-d{
+grid-area: img4;
+}
+.secpro .gallery1 .img-e{
+grid-area: img6;
+}
+.secpro .gallery1 .img-f{
+grid-area: img8;
+}
+
+.secpro .gallery1 .img-g{
+    grid-area: img9;
+    }
+
+.footerpro{
+background-color: rgb(228, 216, 154);
+}
+.footerpro a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.gallery1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* CONTENIDO TABLET PROD*/
+@media screen and (max-width: 768px){
+    .secpro .gallery1{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:repeat(7, 1fr) ;
+        grid-template-areas:
+        "img2 img2"
+        "img1 img3"
+        "img4 img4"
+        "img5 img7"
+        "img6 img6"
+    }
+    .secpro .gallery1 .img-b{
+        grid-area: img2;
+        }
+    .secpro .gallery1 .img-a{
+        grid-area: img1;
+        }
+        .secpro .gallery1 .img-c{
+        grid-area: img3;
+        }
+        .secpro .gallery1 .img-d{
+        grid-area: img4;
+        }
+        .secpro .gallery1 .img-e{
+        grid-area: img5;
+        }
+        .secpro .gallery1 .img-f{
+        grid-area: img6;
+        }
+        .secpro .gallery1 .img-g{
+            grid-area: img7;
+            }
+        }
+
+/*TAMAÑO CELULAR*/
+@media screen and (max-width:500px) {
+    .secpro .gallery1{
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(7, 1fr) ;
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7";
+    
+}
+.secpro .gallery1 .img-a{
+    grid-area: img1;
+    }
+    .secpro .gallery1 .img-b{
+    grid-area: img2;
+    }
+    .secpro .gallery1 .img-c{
+    grid-area: img3;
+    }
+    .secpro .gallery1 .img-d{
+    grid-area: img4;
+    }
+    .secpro .gallery1 .img-e{
+    grid-area: img5;
+    }
+    .secpro .gallery1 .img-f{
+    grid-area: img6;
+    }
+    .secpro .gallery1 .img-g{
+        grid-area: img7;
+        }
+
+}
+
+
+/* FIN DE PRODUCTOS*/
+
+/*CONTACTOS*/
+.contenedortotalcon{
+background-image: url(../imagenes/fondopri\ 6.avif);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menucon{
+    background-color:rgb(228, 216, 154);
+}
+.menucon  ul li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.logomenucon img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.menucon a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.titulocon{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+}
+
+.contactoscon{
+    padding: 70px 70px 80px 10px;
+}
+
+
+.footercon{
+    background-color: rgb(228, 216, 154);
+}
+.footercon a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+/*PREGUNTAS FRECUENTES*/
+
+.contenedortotalpre{
+    background-image: url(../imagenes/fondopri\ 6.avif);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mipropiopre{
+    margin: 100px 10px 100px 10px;
+}
+.menupre{
+    background-color:rgb(228, 216, 154);
+}
+.menupre ul{
+margin-right: 3%;
+}
+
+
+.menupre  ul li {
+    list-style-type: none;
+    margin-left: 20px;
+}
+.logomenupre img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.menupre a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.titulopre{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    text-align: center;
+}
+
+.footerpre{
+    background-color: rgb(228, 216, 154);
+}
+.footerpre a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
