@@ -66,37 +66,37 @@
     
 }
 /*NOVEDADES*/
-    .contenedortotalnov{
-        background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(226, 216, 165) 47%, rgba(255,255,255,1) 85%);
-    }
+.contenedortotalnov{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(226, 216, 165) 47%, rgba(255,255,255,1) 85%);
+}
 
-    .contenedornov{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0,5fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "menunov menunov"
-        "titulonov titulonov"
-        "prinov textonov"
-        "footernov footernov" ;
-    
-    .menunov{
-        grid-area: menunov;
-    }
-    .titulonov{
-        grid-area: titulonov;
-    }
-    .prinov{
-        grid-area: prinov;
-    }
-    .textonov{
-        grid-area: textonov;
-    }
-    .footernov{
-        grid-area: footernov;
-    }
+.contenedornov{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0,5fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "menunov menunov"
+    "titulonov titulonov"
+    "prinov textonov"
+    "footernov footernov" ;
+
+.menunov{
+    grid-area: menunov;
+}
+.titulonov{
+    grid-area: titulonov;
+}
+.prinov{
+    grid-area: prinov;
+}
+.textonov{
+    grid-area: textonov;
+}
+.footernov{
+    grid-area: footernov;
+}
 }
 
 .menunov{
@@ -322,7 +322,7 @@
     /* CONTENIDO TABLET PROD*/
 @media screen and (max-width: 768px){
     .secpro .gallery1{
-        grid-template-columns:1.1fr 1fr;
+        grid-template-columns:1fr 1fr;
         grid-template-rows:repeat(5, 1fr) ;
         grid-template-areas:
         "img2 img2"
@@ -351,6 +351,12 @@
         }
         .secpro .gallery1 .img-g{
         grid-area: img7;
+        }
+        .secpro img{
+            object-fit: cover;
+            width:85%;
+            height: 85%;
+            border-radius: 60px;
         }
         }
 
@@ -414,26 +420,31 @@
         }
     }
 
-    .titulocon{
-        background-color:$colortitulo ;
-        color: aliceblue;
-        text-align: center;
-    }
+.titulocon{
+    background-color:$colortitulo ;
+    color: aliceblue;
+    text-align: center;
+}
 
-    .contactoscon{
-        padding: 70px 70px 80px 10px;
-    }
+.contactoscon{
+    padding: 70px 70px 80px 10px;
+}
+.imgtrans img {
+    height: 400px;
+    transform: translate(650px,px);
+    
+}
 
-    .footercon{
-        background-color: $colormenu;
-        a{
-            text-decoration: none;
-            color:$colortitulo;
-            font-weight: bolder;
-        }
+.footercon{
+    background-color: $colormenu;
+    a{
+        text-decoration: none;
+        color:$colortitulo;
+        font-weight: bolder;
     }
+}
 
-    /*PREGUNTAS FRECUENTES*/
+/*PREGUNTAS FRECUENTES*/
 
 .contenedortotalpre{
     background: rgb(63,94,251);

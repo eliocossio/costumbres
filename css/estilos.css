@@ -299,7 +299,7 @@
 /* CONTENIDO TABLET PROD*/
 @media screen and (max-width: 768px) {
   .secpro .gallery1 {
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "img2 img2" "img1 img3" "img4 img4" "img5 img7" "img6 img6";
   }
@@ -323,6 +323,12 @@
   }
   .secpro .gallery1 .img-g {
     grid-area: img7;
+  }
+  .secpro img {
+    object-fit: cover;
+    width: 85%;
+    height: 85%;
+    border-radius: 60px;
   }
 }
 /*TAMAÑO CELULAR*/
@@ -383,6 +389,11 @@
 
 .contactoscon {
   padding: 70px 70px 80px 10px;
+}
+
+.imgtrans img {
+  height: 400px;
+  transform: translate(650px, px);
 }
 
 .footercon {
