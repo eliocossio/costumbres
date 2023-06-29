@@ -31,12 +31,12 @@
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 60px;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 80px;
+  margin-left: 80px;
 }
 .imgpri img {
   height: 400px;
-  width: 800px;
+  width: 600px;
   border-radius: 5%;
 }
 
