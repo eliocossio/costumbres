@@ -16,9 +16,7 @@
 .menupri{
     background-color:$colormenu;
     img{
-        width: 70px;
-        height: 70px;
-            border-radius: 50%;
+    border-radius: 50%;
     }
     }
 
@@ -478,7 +476,7 @@
 /*MIXINS*/
 @mixin none-color-font{
     text-decoration: none;
-    color:$colortitul;
+    color:$colortitulo;
     font-weight: bolder;
 }
 .menupri a{
@@ -488,10 +486,11 @@
     @include none-color-font;
 }
 
-@mixin tamano($height,$width){
+@mixin tamano($height, $width){
     height: $height;
     width: $width;
 }
-/*.menupri{
+.menupri img{
     @include tamano(70px, 70px)
-}*/
+}
+
