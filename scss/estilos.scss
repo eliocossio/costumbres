@@ -20,10 +20,6 @@
         height: 70px;
             border-radius: 50%;
     }
-    a{
-        color:$colortitulo;
-        font-weight: bolder;
-    }
     }
 
 .titulopri{
@@ -58,12 +54,6 @@
 
 .footerpri{
     background-color: $colormenu;
-    a{
-        text-decoration: none;
-        color: $colortitulo;
-        font-weight: bolder;
-    } 
-    
 }
 /*NOVEDADES*/
 .contenedortotalnov{
@@ -485,3 +475,23 @@
     }
 }
 
+/*MIXINS*/
+@mixin none-color-font{
+    text-decoration: none;
+    color:$colortitul;
+    font-weight: bolder;
+}
+.menupri a{
+    @include none-color-font;
+}
+.footerpri a{
+    @include none-color-font;
+}
+
+@mixin tamano($height,$width){
+    height: $height;
+    width: $width;
+}
+/*.menupri{
+    @include tamano(70px, 70px)
+}*/
