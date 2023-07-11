@@ -40,15 +40,49 @@
   border-radius: 5%;
 }
 
-.textopri {
+.iframepri iframe {
+  border-radius: 5%;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.articulonov p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  border: solid 6px black;
+  font-size: 27px;
   text-align: justify;
   margin: 5px 20px 10px 20px;
   margin-bottom: 40px;
   border-radius: 2%;
+}
+
+.articulonov h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.contenedorpritex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 50px 50px 10px;
+}
+.contenedorpritex .image {
+  flex: 1;
+  padding: 50px;
+}
+.contenedorpritex .image img {
+  width: 650px;
+  height: 500px;
+}
+.contenedorpritex .text {
+  flex: 1;
+  padding: 20px;
+  font-size: 25px;
+}
+.contenedorpritex h3 {
+  font-weight: bolder;
+  padding-bottom: 20px;
 }
 
 .footerpri {
@@ -115,6 +149,7 @@
 .textonov p {
   font-size: 22px;
   padding-top: 4%;
+  padding-right: 1%;
 }
 
 .prinov {
@@ -153,6 +188,8 @@
   }
   .textonov {
     grid-area: textonov;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .footernov {
     grid-area: footernov;
